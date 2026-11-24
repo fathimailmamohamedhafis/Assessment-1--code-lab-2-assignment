@@ -83,15 +83,25 @@ for page in PAGES.value():
             a = randint (low, high)
             b = randint (low, high)
             #randomizes numbers between the low and high numbers
-            answered = a+b
+            answer = a+b
             display = f"{a} + {b}= ?"
             #what the display will be
+        elif operation == "-":
+            a = randint (low, high)
+            b = randint (low, high)
+            if b> a:
+                a,b = b, a 
+                #making sure to keep the answer not negative
+            answer = a - b
+            display = f"{a} + {b}= ?"
+            
+
           
 
-    def add_ numbers
+    
 
 
-
+root.mainloop()
 
 
 
