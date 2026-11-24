@@ -146,6 +146,14 @@ for page in PAGES.value():
 
        #makes questions that r already answered disabled
       
+       if youranswer == correctanswer:
+        score += 1
+        #increses the score if the users answer is correct
+        ui["result_label"]. config(
+           text = "oh, its wrong...., the correct answer is {correctanswer}", fg= "red")
+
+
+    
  
 
     
