@@ -107,18 +107,27 @@ for page in PAGES.value():
              answer = a*bdisplay = f"{a} * {b}= ?"
         else: #division
            if level== "Easy" : 
-              divisor = randint (10, 50)
-              quotent = randint (10, 50)
+              divisor = randint (10, 50) # picking the divisor and quotient first causee itll multiply to get the exact divident
+              quotient = randint (10, 50)
            elif level == "Medium":
               divisor = randint (50, 100)
-              quotent = randint (50, 100)
+              quotient = randint (50, 100)
            else :
               divisor = randint (100, 500)
-              quotent = randint (100, 500)
-           divide = divisor * quotent 
-           a, b = divide, divisor
+              quotient = randint (100, 500)
+           divident = divisor * quotient 
+           a, b = divident, divisor
+           answer = quotient 
            #puts large number first and smaller number 2nd
-           
+           display = f"{divident} / {divisor}"
+
+        return a, b , operation, answer, display 
+
+    
+        
+
+
+
 
            
 
