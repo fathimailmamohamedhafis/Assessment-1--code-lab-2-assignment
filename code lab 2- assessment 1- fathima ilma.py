@@ -52,10 +52,9 @@ for page in PAGES.value():
         currentanswer=False
 
         if level in ("Easy", "Medium", "Hard"):
-            class quiz:
-                ...
+            
 
-            ui = quiz[level]
+            ui = "quiz"[level]
             #checking a dictionary of the certain level.
             ui["score_label"].config(text="score: 0" fg: "black")
             #resets score
@@ -122,6 +121,32 @@ for page in PAGES.value():
            display = f"{divident} / {divisor}"
 
         return a, b , operation, answer, display 
+
+    def numbers ():
+       #check if users input matches correctanswer and update the score.
+       global score, currentanswer, answered, num1, num2, correctanswer
+       ui = "quiz"[current_level]
+
+       if answered or currentanswer:
+          ui["result_label"].config(text = "already answered", fg= "red")
+          #stops user from trying to answer again
+          return
+       try: 
+          youranswer = int (ui["entry"].get().strip())
+       except ValueError:
+          ui["result_label"].config(text=":please enter a number", fg="red")
+          return 
+       #makes an integer out of the text that was inputed- shows thatt its an error if the text isnt a number
+
+       answered = True
+       currentanswer= True
+
+       ui["enter"].config(state="disabled")
+
+
+       #makes questions that r already answered disabled
+      
+ 
 
     
         
