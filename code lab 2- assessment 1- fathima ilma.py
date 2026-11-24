@@ -72,6 +72,20 @@ for page in PAGES.value():
         operation= choice (["+", "-", "*", "/"])
 
         if level=="Easy":
+            low, high = 10, 50
+        elif level == "Medium":
+            low, high == 50, 100
+        else:
+            low, high = 100, 500
+            #numbers beterrn 10, 50 for easy and 50, 100 for medium and 100, 500 for hard
+
+        if operation == "+":
+            a = randint (low, high)
+            b = randint (low, high)
+            #randomizes numbers between the low and high numbers
+            answered = a+b
+            display = f"{a} + {b}= ?"
+            #what the display will be
           
 
     def add_ numbers
