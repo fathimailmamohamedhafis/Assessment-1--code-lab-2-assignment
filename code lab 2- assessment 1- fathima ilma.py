@@ -107,6 +107,11 @@ for page in PAGES.value():
              answer = a*bdisplay = f"{a} * {b}= ?"
         else: #division
            if level== "Easy" : 
+              divisor = randint (10, 50)
+              quotent = randint (10, 50)
+           elif level == "Medium":
+              divisor = randint (50, 100)
+              quotent = randint (50, 100)
 
 
 
