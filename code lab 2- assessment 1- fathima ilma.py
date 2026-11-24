@@ -88,13 +88,27 @@ for page in PAGES.value():
             #what the display will be
         elif operation == "-":
             a = randint (low, high)
-            b = randint (low, high)
+            a = randint (low, high)
             if b> a:
                 a,b = b, a 
-                #making sure to keep the answer not negative
+            #makes sure the answer isnt negative
+                
             answer = a - b
-            display = f"{a} + {b}= ?"
-            
+            display = f"{a} - {b}= ?"
+
+        elif operation =="*":
+            if level=="Easy":
+             a,b = randint ( 10, 50), randint (10, 50)
+            elif level == "Medium":
+             
+             a, b = randint= (50, 100), randint (50, 100)
+            else:
+             a,b = randint (100, 500), randint (100,500)
+             answer = a*bdisplay = f"{a} * {b}= ?"
+        else: #division
+           if level== "Easy" : 
+
+
 
           
 
