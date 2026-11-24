@@ -112,6 +112,15 @@ for page in PAGES.value():
            elif level == "Medium":
               divisor = randint (50, 100)
               quotent = randint (50, 100)
+           else :
+              divisor = randint (100, 500)
+              quotent = randint (100, 500)
+           divide = divisor * quotent 
+           a, b = divide, divisor
+           #puts large number first and smaller number 2nd
+           
+
+           
 
 
 
